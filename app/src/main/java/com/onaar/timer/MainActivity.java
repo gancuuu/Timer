@@ -1,6 +1,8 @@
-package com.onaar.timer;
+    package com.onaar.timer;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +12,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+
+       Button btnNr1, btnNr2, btnNr3, btnNr4, btnNr5;
+       TextView textViewTimer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        btnNr1 = findViewById(R.id.btnNr1);
+        btnNr2 = findViewById(R.id.btnNr2);
+        btnNr3 = findViewById(R.id.btnNr3);
+        btnNr4 = findViewById(R.id.btnNr4);
+        btnNr5 = findViewById(R.id.btnNr5);
+        textViewTimer = findViewById(R.id.textViewTimer);
     }
 }
